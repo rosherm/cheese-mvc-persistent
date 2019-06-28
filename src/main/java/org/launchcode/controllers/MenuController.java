@@ -72,7 +72,7 @@ public class MenuController {
 
         model.addAttribute("form", form);
 
-        model.addAttribute("title", "'Add item to menu: '"+ form.getMenu().getName());
+        model.addAttribute("title", "Add item to menu: "+ form.getMenu().getName());
 
         return "menu/add-item";
     }
@@ -82,7 +82,7 @@ public class MenuController {
 
 
         if (errors.hasErrors()) {
-            model.addAttribute("title", "'Add item to menu: '"+ form.getMenu().getName());
+            model.addAttribute("title", "Add item to menu: "+ form.getMenu().getName());
             return "menu/add-item";
         }
 
